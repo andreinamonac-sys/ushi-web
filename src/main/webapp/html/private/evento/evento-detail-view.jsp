@@ -1,9 +1,9 @@
 <%@ include file="/html/public/common/header.jsp" %>
-<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="evento" value="${requestScope.evento}"/>
 <h1>Detalle del evento</h1>
 <c:choose>
-    <c:when test="${empty evento}"><p>No se ha seleccionado ningún evento.</p></c:when>
+    <c:when test="${empty evento}"><p>No se ha seleccionado ningï¿½n evento.</p></c:when>
     <c:otherwise>
         <dl>
             <dt>ID</dt><dd>
@@ -14,7 +14,7 @@
             <dd><c:out value="${evento.nombreTipoEvento}"/></dd>
             <dt>Animal</dt>
             <dd><c:out value="${evento.animalNumRegistro}"/></dd>
-            <dt>Descripción</dt>
+            <dt>Descripciï¿½n</dt>
             <dd><c:out value="${evento.descripcion}"/></dd>
             <dt>Veterinario</dt>
             <dd><c:out value="${evento.nombreVeterinario}"/> <c:out value="${evento.apellidoVeterinario}"/></dd>

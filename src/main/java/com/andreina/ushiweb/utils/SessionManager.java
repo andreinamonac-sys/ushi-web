@@ -1,4 +1,4 @@
-package com.jal.ushi.util;
+package com.andreina.ushiweb.utils;
 
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.http.HttpServletRequest;

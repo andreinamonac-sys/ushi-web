@@ -1,4 +1,4 @@
-package com.jal.ushi.util;
+package com.andreina.ushiweb.utils;
 
 public class AttributeNames {
 	public static final String USUARIO="usuario";

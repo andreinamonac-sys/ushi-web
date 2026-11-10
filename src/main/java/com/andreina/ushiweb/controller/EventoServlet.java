@@ -1,4 +1,4 @@
-package com.jal.ushi.servlet;
+package com.andreina.ushiweb.controller;
 
 import java.io.IOException;
 import java.sql.Timestamp;
@@ -12,10 +12,10 @@ import com.andreina.ushi.model.EventoDTO;
 import com.andreina.ushi.model.Results;
 import com.andreina.ushi.service.EventoService;
 import com.andreina.ushi.service.impl.EventoServiceImpl;
-import com.jal.ushi.util.AttributeNames;
-import com.jal.ushi.util.PNames;
-import com.jal.ushi.util.PValues;
-import com.jal.ushi.view.Views;
+import com.andreina.ushiweb.utils.AttributeNames;
+import com.andreina.ushiweb.utils.PNames;
+import com.andreina.ushiweb.utils.PValues;
+import com.andreina.ushiweb.view.Views;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -1,5 +1,5 @@
 <%@ include file="/html/public/common/header.jsp"%>
-<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <h1>Eventos</h1>
 <%@ include file="/html/private/evento/evento-search.jsp"%>

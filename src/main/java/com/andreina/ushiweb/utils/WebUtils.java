@@ -1,4 +1,4 @@
-package com.jal.ushi.util;
+package com.andreina.ushiweb.utils;
 
 import java.io.IOException;
 import java.util.List;

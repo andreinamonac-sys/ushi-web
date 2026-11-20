@@ -159,7 +159,9 @@ public class PrivateUsuarioServlet extends HttpServlet {
 			request.getRequestDispatcher(Views.USUARIO_DETAIL).forward(request, response);
 
 		} else if (PValues.ACTION_UPDATE.equalsIgnoreCase(action)) {
-
+			//TODO: Que el administrador pueda hacer modificaciones a otros usuarios.
+			
+			
 			// Los cambios deben enviarse mediante POST.
 			if (!"POST".equalsIgnoreCase(request.getMethod())) {
 				response.sendError(HttpServletResponse.SC_METHOD_NOT_ALLOWED);

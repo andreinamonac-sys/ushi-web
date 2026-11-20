@@ -1468,6 +1468,153 @@ h3,
 
 .registration-form .form-message { grid-column: 1 / -1; }
 
+/* Eventos */
+.eventos-acciones {
+    align-items: center;
+}
+
+.eventos-acciones form {
+    margin: 0;
+}
+
+.eventos-acciones svg {
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.65;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.evento-detalle {
+    width: min(850px, 100%);
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 36px);
+    background: var(--ushi-surface, white);
+}
+
+.evento-detalle h1 {
+    margin: 0 0 24px;
+}
+
+.evento-datos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 18px 24px;
+    margin: 0;
+}
+
+.evento-datos dt {
+    font-weight: 700;
+}
+
+.evento-datos dd {
+    margin: 4px 0 0;
+    overflow-wrap: anywhere;
+}
+
+.evento-texto {
+    white-space: pre-wrap;
+}
+
+.evento-ancho {
+    grid-column: 1 / -1;
+}
+
+.evento-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.granja-formulario .granja-botones,
+.evento-formulario .evento-botones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 320px);
+    margin-inline-start: auto;
+}
+
+.granja-formulario .granja-botones > .btn,
+.evento-formulario .evento-botones > .btn {
+    width: 100%;
+    margin: 0;
+    padding-inline: 8px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.granja-formulario .granja-botones {
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.granja-calle {
+    grid-column: 1 / -1;
+}
+
+.granja-acciones form {
+    margin: 0;
+}
+
+.registration-card.formulario-privado {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.evento-formulario h1 {
+    margin-bottom: 24px;
+}
+
+.evento-formulario textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--ushi-border);
+    border-radius: 8px;
+    background: white;
+    color: var(--ushi-ink);
+    font: inherit;
+    resize: vertical;
+}
+
+.evento-formulario [hidden] {
+    display: none;
+}
+
+.evento-nuevo {
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.evento-nuevo svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.eventos-columna-acciones {
+    width: 108px;
+}
+
+.evento-detalle-botones {
+    padding-top: 20px;
+    border-top: 1px solid var(--ushi-border);
+}
+
+@media (max-width: 520px) {
+    .dashboard-page .page-title:has(.evento-nuevo) {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 /* Versión sin JavaScript: navegación siempre accesible y funciones pendientes indicadas. */
 .contact .contact-form { background: var(--ushi-surface); border: 1px solid var(--ushi-border); border-radius: 10px; padding: 28px; }
 .contact button:disabled { opacity: .65; cursor: not-allowed; }
@@ -1480,4 +1627,155 @@ h3,
   .sidebar nav > p { flex-basis: 100%; }
   .sidebar-user { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
   .dashboard-wrap { padding-left: 0; }
+}
+
+/* Selector de explotación y acceso al perfil en la cabecera del panel. */
+.panel-topbar {
+  gap: 20px;
+}
+.panel-topbar .topbar-left,
+.panel-topbar .topbar-right {
+  min-width: 0;
+}
+.panel-topbar .topbar-right {
+  margin-left: auto;
+  gap: 16px;
+}
+.granja-selector-cabecera {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+}
+.granja-selector-campo {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.granja-selector-campo > span {
+  color: var(--ushi-muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.granja-selector-campo select {
+  width: 200px;
+  max-width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ushi-ink);
+  font-size: 13px;
+}
+.granja-selector-accion .btn {
+  height: 38px;
+  min-height: 38px;
+  padding: 0 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.granja-selector-vacio {
+  margin: 0;
+  color: var(--ushi-muted);
+  font-size: 12px;
+}
+.usuario-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 4px 0;
+}
+.usuario-cabecera-foto {
+  display: block;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--sage);
+  color: var(--ushi-ink);
+  pointer-events: none;
+}
+.usuario-cabecera-foto svg {
+  width: 100%;
+  height: 100%;
+}
+.usuario-cabecera-datos {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  max-width: 180px;
+}
+.usuario-cabecera-datos strong {
+  overflow: hidden;
+  color: var(--ushi-ink);
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.usuario-cabecera-datos small {
+  color: var(--ushi-muted);
+  font-size: 12px;
+}
+@media (max-width: 1280px) {
+  .panel-topbar .online {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .granja-selector-campo select {
+    width: 160px;
+  }
+  .usuario-cabecera-datos {
+    max-width: 140px;
+  }
+}
+@media (max-width: 760px) {
+  .panel-topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    height: auto;
+    min-height: 80px;
+    padding-block: 12px;
+    gap: 12px;
+  }
+  .panel-topbar .topbar-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .panel-topbar .topbar-left small {
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .panel-topbar .topbar-right {
+    display: contents;
+  }
+  .panel-topbar .bell {
+    display: none;
+  }
+  .granja-selector-cabecera {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+  }
+  .granja-selector-campo {
+    flex: 1;
+  }
+  .granja-selector-campo select {
+    width: 100%;
+  }
+  .usuario-cabecera {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .usuario-cabecera-datos {
+    max-width: 120px;
+  }
 }

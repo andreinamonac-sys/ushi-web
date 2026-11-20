@@ -1,5 +1,5 @@
 
-package com.andreina.ushiweb.utils;
+package com.andreina.ushi.web.utils;
 
 public class PValues {
 	public static final String ACTION_DETAIL="detail";
@@ -11,4 +11,7 @@ public class PValues {
 	public static final String ACTION_GETPROFILE = "get-profile";
 	public static final String ACTION_DELETE="delete";
 	public static final String ACTION_UPDATE="update";
+	public static final String ACTION_UPDATE_IMAGE="update-image";
+	public static final String ACTION_CREATE="create";
+	public static final String ACTION_SELECT_GRANJA = "select-granja";
 }

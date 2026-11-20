@@ -1,4 +1,4 @@
-package com.andreina.ushiweb.view;
+package com.andreina.ushi.web.view;
 
 public class Views {
     public static final String USUARIO_REGISTER = "/html/public/usuario/register.jsp";
@@ -7,6 +7,7 @@ public class Views {
 	public static final String HOME = "/html/public/index.jsp";
 	public static final String EVENTO_SEARCH = "/html/private/evento/evento-search-view.jsp";
 	public static final String EVENTO_DETAIL = "/html/private/evento/evento-detail-view.jsp";
+	public static final String EVENTO_CREATE = "/html/private/evento/nuevo-evento-form.jsp";
 	public static final String USUARIO_LOGIN = "/html/public/usuario/login.jsp";
 	public static final String ANIMAL_DETAIL = "/html/private/animal/animal-detail-view.jsp";
 	public static final String ANIMAL_SEARCH = "/html/private/animal/animal-search-view.jsp";

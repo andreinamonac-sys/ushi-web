@@ -19,7 +19,7 @@
 			href="${pageContext.request.contextPath}/html/private/panelControl/panel-detail-view.jsp">Mi
 			panel</a>
 		<form class="session-logout"
-			action="${pageContext.request.contextPath}/public/usuario"
+			action="${pageContext.request.contextPath}/private/usuario"
 			method="post">
 			<input type="hidden" name="action" value="logout">
 			<button type="submit">Cerrar sesión</button>

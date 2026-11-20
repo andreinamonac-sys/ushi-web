@@ -20,7 +20,6 @@
 					<header>
 						<p class="eyebrow">Bienvenido a Ushi</p>
 						<h1 id="registration-title">Crea tu cuenta</h1>
-						<p>Crea tu cuenta como propietario de la explotación.</p>
 					</header>
 					<form action="${pageContext.request.contextPath}/public/usuario"
 						method="post" enctype="multipart/form-data">
@@ -91,7 +90,7 @@
 								<div class="profile-file">
 									<label for="foto-perfil">Selecciona una imagen</label> <input
 										id="foto-perfil" name="foto-perfil" type="file"
-										accept="image/jpeg,image/png" aria-describedby="photo-help">
+										accept="image/jpeg" aria-describedby="photo-help">
 									<span id="photo-help" class="field-help">JPG o PNG.
 										Máximo 5 MB.</span>
 								</div>

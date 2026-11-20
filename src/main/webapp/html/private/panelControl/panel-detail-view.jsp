@@ -7,45 +7,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ushi - Panel de control</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/ushi.css">
+	href="${pageContext.request.contextPath}/css/ushi.css?v=23904b502e32">
 </head>
 <body class="dashboard-page">
 	<%@ include file="/html/private/panelControl/menu.jsp"%>
 	<div class="dashboard-wrap">
-		<header class="topbar">
-			<div class="topbar-left">
-				<div>
-					<small>Finca A Lagoa</small><strong>Panel de control</strong>
-				</div>
-			</div>
-			<div class="topbar-right">
-				<label class="global-search"><svg viewBox="0 0 24 24">
-						<circle cx="11" cy="11" r="7"></circle>
-						<path d="m20 20-4-4"></path></svg><input placeholder="Buscar en Ushi..."
-					aria-label="Buscar en Ushi" disabled
-					title="Búsqueda pendiente de implementar"></label>
-				<button class="bell" type="button" aria-label="Notificaciones"
-					disabled title="Notificaciones pendientes de implementar">
-					<svg viewBox="0 0 24 24">
-						<path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 8h18c0-1-3-1-3-8M10 21h4"></path></svg>
-					<span></span>
-				</button>
-				<div class="online">
-					<span></span>78 tags online
-				</div>
-			</div>
-		</header>
+		<c:set var="tituloCabecera" value="Panel de control"/>
+        <%@ include file="/html/private/panelControl/cabecera.jsp" %>
 		<main>
+
 			<div class="page-title">
 				<div>
 					<p class="eyebrow">Resumen de hoy</p>
 					<h1>Panel de control</h1>
-					<p>Estado general de Finca A Lagoa y de los dispositivos
+					<p>Estado general de la explotación seleccionada y de los dispositivos
 						conectados.</p>
 				</div>
-				<a class="btn primary"
-					href="${pageContext.request.contextPath}/animal?action=search">Ver
-					animales</a>
+
 			</div>
 			<p class="prototype-note">Vista de demostración: métricas y
 				alertas de ejemplo.</p>
